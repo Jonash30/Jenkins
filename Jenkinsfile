@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo '[INFO] Cloning Repository'
                 //sh 'git clone --depth 1 --single-branch https://github.com/Jonash30/Jenkins.git'
-                sh 'ls wondercms'
+                sh 'ls website'
             }
         }
         stage('Provision AWS Instance') {
