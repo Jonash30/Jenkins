@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <head>
+            <nav>
+                <h1>PIZZA CAP</h1>
+            </nav>
+        </head>
+    
+        <main>
+            <div class="form">
+                <section class="pizza">
+                    <span>What Pizza do you want?</span>
+                    <label for="Cheese-pizza">Cheese Pizza</label>
+                    <input id="Cheese-pizza" type="checkbox" name="pizza-type" value="Cheese-pizza">
+                    <label for="pepperoni-pizza">Pepperoni Pizza</label>
+                    <input id="pepperoni-pizza" type="checkbox" name="pizza-type" value="pepperoni-pizza">
+                    <label for="hawaiian-pizza">Hawaiian Pizza</label>
+                    <input id="hawaiian-pizza" type="checkbox" name="pizza-type" value="pepperoni-pizza">
+                </section>
+
+                <section class="toppings">
+                    <span>What toppings would you like?</span>
+                    <label for="onion">Onion</label>
+                    <input type="checkbox" id="onion" name="topping" value="onion">
+                    <label for="mushroom">Mushroom</label>
+                    <input type="checkbox" id="mushroom" name="topping" value="mushroom">
+                    <label for="pepperoni">Pepperoni</label>
+                    <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+                    <label for="extra-cheese">Extra Cheese</label>
+                    <input type="checkbox" id="extra-cheese" name="topping" value="extra-cheese">
+                </section>
+
+                <section class="orders">
+                    <label for="order">How many order?</label>
+                    <input type="number" id="order" min="0" max="50" name="order">
+                </section>
+                
+                <section class="order-size">
+                    <span>What Pizza sizes would you like?</span>
+                    <label for="personal">Personal/10in</label>
+                    <input type="checkbox" id="personal" name="pizza-size" value="personal">
+                    <label for="small">Small/12in</label>
+                    <input type="checkbox" id="small" name="pizza-size" value="small">
+                    <label for="medium">Medium/14in</label>
+                    <input type="checkbox" id="medium" name="pizza-size" value="medium">
+                    <label for="large">Large/16in</label>
+                    <input type="checkbox" id="large" name="pizza-size" value="large">
+                </section>
+
+                <section class="order-info">
+                    <label for="info">Anything else you want to add?</label>
+                    <textarea name="info" id="info" cols="50" rows="5"></textarea>
+                </section>
+
+                <input type="submit" value="Order">
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
